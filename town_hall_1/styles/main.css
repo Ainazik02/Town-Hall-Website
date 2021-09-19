@@ -1,0 +1,99 @@
+/* the styles for the elements */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 87.5%;
+  width: 700px;
+  margin: 0 auto 0 auto;
+  border: 3px solid #931420;
+  background-color: #fffded;
+}
+header {
+  padding-top: 1.5em;
+
+  background: linear-gradient(
+    30deg,
+    #f6bb73 0%,
+    #f6bb73 10%,
+    white 30%,
+    white 70%,
+    #f6bb73 90%,
+    #f6bb73 100%
+  );
+  border-bottom: 3px solid #931420;
+}
+/* the styles for the header */
+header img {
+  float: left;
+  padding: 0 30px;
+}
+header h1 {
+  color: 800000;
+}
+header h2 {
+  font-size: 190%;
+  color: #800000;
+  text-indent: 30px;
+}
+header h3 {
+  font-size: 150%;
+  font-style: italic;
+  text-indent: 30px;
+
+  padding-bottom: 2em;
+}
+/* the styles for the section */
+main {
+  clear: left;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+main h1 {
+  font-size: 150%;
+  border: 3px double #931420;
+  box-shadow: 3px 3px 4px;
+  padding: 0.3em 0 0.3em 0.3em;
+  border-radius: 5px;
+  background-color: white;
+}
+main h2 {
+  font-size: 130%;
+  color: #800000;
+}
+main h3 {
+  font-size: 105%;
+}
+main img {
+  padding-bottom: 1em;
+}
+main p {
+  padding-bottom: 0.5em;
+}
+main blockquote {
+  padding-right: 2em;
+  padding-left: 2em;
+  font-style: italic;
+}
+main ul {
+  padding-bottom: 0.25em;
+  padding-left: 1.25em;
+}
+main li {
+  padding-bottom: 0.35em;
+}
+a:hover {
+  font-style: italic;
+}
+footer {
+  text-align: center;
+  background-color: #931420;
+  color: white;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  clear: both;
+  border-top: 3px solid #800000;
+}
+
+.shadow {
+  color: black;
+  text-shadow: 3px 3px 2px #800000;
+}
