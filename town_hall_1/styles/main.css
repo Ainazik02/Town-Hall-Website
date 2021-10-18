@@ -3,13 +3,21 @@
   margin: 0;
   padding: 0;
 }
+.logo{
+  float: left;
+  margin-right: 1em;
+  padding-right: 0.105%;
+  padding-left: 0.105%;
+}
 html {
   background-color: white;
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100%;
-  width: 800px;
+  clear: left;
+  max-width: 960px;
+  width: 99%;
   margin: 0 auto;
   border: 3px solid #931420;
   background-color: #fffded;
@@ -20,7 +28,11 @@ a:hover {
 }
 /* the styles for the header */
 header {
-  padding: 1.5em 0 2em 0;
+  padding-top:1.5em;
+  padding-bottom:2em;
+  padding-left: 1em;
+  text-align: center;
+  width: 96.875%;
   border-bottom: 3px solid #931420;
   background-image: -moz-linear-gradient(
     30deg,
@@ -56,7 +68,7 @@ header {
   );
 }
 header h2 {
-  font-size: 175%;
+  font-size: 170%;
   color: #800000;
 }
 header h3 {
@@ -64,7 +76,7 @@ header h3 {
   font-style: italic;
 }
 header img {
-  float: left;
+  float: none;
   padding: 0 30px;
 }
 .shadow {
@@ -74,21 +86,22 @@ header img {
 #na_menu ul {
   list-style-type: none;
   padding: 0;
-  text-align: center;
+  margin:0;
   position: relative;
 }
 #na_menu ul li {
   display: inline;
   padding: 0;
   float: left;
+  width: 13.334%;
 }
 
 #na_menu ul li a {
   text-align: center;
   display: block;
-  width: 160px;
+  width: 13.334%;
 
-  padding: 1em 0;
+  padding: 1em 1em;
   text-decoration: none;
   background-color: #800000;
   color: white;
@@ -105,6 +118,8 @@ header img {
 }
 #na_menu ul ul li {
   float: none;
+  width: 13.334%;
+
 }
 #na_menu ul li:hover > ul {
   display: block;
@@ -114,37 +129,47 @@ header img {
   display: block;
   clear: both;
 }
+.circle{
+  list-style-type: circle;
+}
 main {
   clear: left;
 }
 /* the styles for the section */
-section {
-  width: 525px;
+main section {
+  width: 58.6875%;
   float: right;
-  padding: 0 20px 20px 20px;
+  padding-right: 2.84%;
+  padding-left: 2.84%;
+  padding-bottom: 20px;
 }
 section h1 {
-  font-size: 150%;
   padding: 0.5em 0 0.25em 0;
   margin: 0; /* If you remove this, the margins in normalize.css will be applied. */
 }
-section h2 {
-  color: #800000;
+main section h2 {
   font-size: 130%;
+  color: #800000;
+
+
   padding: 0.5em 0 0.25em 0;
 }
-section p {
+main section h3{
+  font-size: 105%;
+  padding-bottom: 0.25em;
+}
+main section p {
   padding-bottom: 0.5em;
 }
 section blockquote {
   padding: 0 2em;
   font-style: italic;
 }
-section ul {
+main section ul {
   padding: 0 0 0.25em 1.25em;
   list-style-type: circle;
 }
-section li {
+main section li {
   padding-bottom: 0.35em;
 }
 
@@ -163,20 +188,26 @@ article h3 {
 }
 article img {
   float: right;
-  margin: 0.5em 0 1em 1em;
+  margin: 1px 1px 1px 1px;
   border: 1px solid black;
+  max-width: 40%;
+  min-width: 150px;
 }
 
 /* the styles for the aside */
 aside {
-  width: 215px;
+  width: 22.3959%;
   float: right;
-  padding: 0 0 20px 20px;
+  padding-left: 20px;
+  padding-bottom:20px;
+
 }
 aside h2 {
   color: #800000;
   font-size: 130%;
-  padding: 0.5em 0 0.25em 0;
+  padding-top: 0.5em;
+
+  padding-bottom: 0.25em;
 }
 
 aside h3 {
@@ -185,15 +216,81 @@ aside h3 {
 }
 aside img {
   padding-bottom: 1em;
+  padding-top: 1em;
 }
+
+
+
+@media only screen and (max-width: 959px) {
+  main section h1 {
+    font-size: 135%;
+  }
+  main section h2 {
+    font-size: 120%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  header img{
+    float: none;
+  }
+  header{
+    text-align: center;
+  }
+  main section{
+    float: none;
+    width: 94.32%
+  }
+  aside{
+    float:none;
+    padding-right: 2.84%;
+    width:94.32%
+
+  }
+
+  article img{
+    max-width:30%;
+  }
+  aside div{
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+
+  }
+ 
+  .js #menu {
+    display: none;
+}
+
+  .js .slicknav_menu {
+    display: block;
+}
+  .slicknav_menu {
+    background-color: #800000;
+}
+}
+
+@media only screen and (max-width: 479px) {
+font-size: 90%;
+.slicknav_menu {
+display: none;
+}
+}
+
+
 
 /* the styles for the footer */
 footer {
   background-color: #931420;
   clear: both;
+  
 }
 footer p {
   text-align: center;
   color: white;
   padding: 1em 0;
+}
+.quotes{
+  padding-right: 2em;
+  padding-left: 2em;
+  font-style: italic;
 }
